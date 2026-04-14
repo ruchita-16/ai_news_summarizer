@@ -21,7 +21,7 @@ export const summarizeText = async (text) => {
     }
 
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/sshleifer/distilbart-cnn-12-6",
+      "https://router.huggingface.co/models/sshleifer/distilbart-cnn-12-6",
       {
         method: "POST",
         headers: {

@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL =
+  import.meta.env.VITE_API_BASE_URL?.trim() || "https://ai-news-summarizer-fe0f.onrender.com";
 
 export const fetchNews = async (query) => {
   const safeQuery = String(query || "india").trim() || "india";
