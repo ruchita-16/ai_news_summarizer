@@ -138,12 +138,7 @@ export default function App() {
     <div className="min-h-screen bg-[#0a0a0f] text-white">
       <Toaster position="top-right" theme="dark" />
 
-      <Navbar
-        activeCategory={activeCategory}
-        activeQuery={activeQuery}
-        onCategoryChange={handleCategoryChange}
-        onSearchSubmit={(query) => handleSearch(query, 'All')}
-      />
+      <Navbar activeCategory={activeCategory} onCategoryChange={handleCategoryChange} />
 
       <Hero onSearch={(query) => handleSearch(query, 'All')} />
 
